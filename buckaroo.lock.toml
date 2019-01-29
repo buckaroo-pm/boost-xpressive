@@ -88,6 +88,10 @@ revision = "3c7e658914247c4b27511d2a46f59be614e2f7bf"
 versions = [ "branch=master" ]
 revision = "cfad39eb7381d02a0914f1c939140aa4f8195a1e"
 
+[lock."github.com/buckaroo-pm/boost-bind"]
+versions = [ "branch=master" ]
+revision = "783ec0afe46d65f8cfdb558e16f25adc02797b3c"
+
 [lock."github.com/buckaroo-pm/boost-chrono"]
 versions = [ "branch=master" ]
 revision = "17081edcdaf181adfb439745635b9752b3f33126"
