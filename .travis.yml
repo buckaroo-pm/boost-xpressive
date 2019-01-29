@@ -1,63 +1,38 @@
-# Copyright 2016, 2017 Peter Dimov
-# Distributed under the Boost Software License, Version 1.0.
-# (See accompanying file LICENSE_1_0.txt or copy at http://boost.org/LICENSE_1_0.txt)
-
 language: cpp
+sudo: true
+dist: trusty
 
-sudo: false
+addons:
+  apt:
+    sources:
+      - ubuntu-toolchain-r-test
+    packages:
+      - g++-6
+      - gcc-6
+  homebrew:
+    taps:
+      - facebook/fb
+    packages:
+      - buck
 
-python: "2.7"
-
-branches:
-  only:
-    - master
-    - develop
-    - /feature\/.*/
+os:
+  - linux
+  - osx
 
 env:
-  matrix:
-    - BOGUS_JOB=true
+  - BUCKAROO_VERSION=buckaroo-redux-alpha-14
 
-matrix:
+cache:
+  directories:
+    - $HOME/.buckaroo/cache
 
-  exclude:
-    - env: BOGUS_JOB=true
+osx_image: xcode9.3
 
-  include:
-    - os: linux
-      compiler: g++
-      env: TOOLSET=gcc CXXSTD=03,11
-
-    - os: linux
-      compiler: clang++
-      env: TOOLSET=clang CXXSTD=03,11,14,1z
-      addons:
-        apt:
-          packages:
-            - libstdc++-4.9-dev
-          sources:
-            - ubuntu-toolchain-r-test
-
-    - os: osx
-      compiler: clang++
-      env: TOOLSET=clang CXXSTD=03,11,14,1z
-
-install:
-  - BOOST_BRANCH=develop && [ "$TRAVIS_BRANCH" == "master" ] && BOOST_BRANCH=master || true
-  - cd ..
-  - git clone -b $BOOST_BRANCH https://github.com/boostorg/boost.git boost-root
-  - cd boost-root
-  - git submodule update --init tools/build
-  - git submodule update --init libs/config
-  - git submodule update --init tools/boostdep
-  - cp -r $TRAVIS_BUILD_DIR/* libs/xpressive
-  - python tools/boostdep/depinst/depinst.py xpressive
-  - ./bootstrap.sh
-  - ./b2 headers
+before_install:
+  - ./travis/before-install-$TRAVIS_OS_NAME.sh
 
 script:
-  - ./b2 libs/xpressive/test toolset=$TOOLSET cxxstd=$CXXSTD
-
-notifications:
-  email:
-    on_success: always
+  - ./buckaroo-client install
+  - buck build -c ui.superconsole=DISABLED //:xpressive
+  - buck run -c ui.superconsole=DISABLED //example
+  - buck run -c ui.superconsole=DISABLED //example:numbers
