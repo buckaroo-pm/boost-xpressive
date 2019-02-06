@@ -1,0 +1,19 @@
+cxx_binary(
+  name = 'example',
+  srcs = [
+    'main.cpp',
+  ],
+  deps = [
+    '//:xpressive',
+  ],
+)
+
+cxx_binary(
+  name = 'numbers',
+  srcs = [
+    'numbers.cpp',
+  ],
+  deps = [
+    '//:xpressive',
+  ],
+)
