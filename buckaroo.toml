@@ -1,0 +1,62 @@
+targets = [ "//:xpressive" ]
+
+
+[[dependency]]
+package = "github.com/buckaroo-pm/boost-assert"
+version = "1.46.1"
+
+[[dependency]]
+package = "github.com/buckaroo-pm/boost-assign"
+version = "1.46.1"
+
+[[dependency]]
+package = "github.com/buckaroo-pm/boost-config"
+version = "1.46.1"
+
+[[dependency]]
+package = "github.com/buckaroo-pm/boost-conversion"
+version = "1.46.1"
+
+[[dependency]]
+package = "github.com/buckaroo-pm/boost-fusion"
+version = "1.46.1"
+
+[[dependency]]
+package = "github.com/buckaroo-pm/boost-integer"
+version = "1.46.1"
+
+[[dependency]]
+package = "github.com/buckaroo-pm/boost-iterator"
+version = "1.46.1"
+
+[[dependency]]
+package = "github.com/buckaroo-pm/boost-lexical_cast"
+version = "1.46.1"
+
+[[dependency]]
+package = "github.com/buckaroo-pm/boost-math"
+version = "1.46.1"
+
+[[dependency]]
+package = "github.com/buckaroo-pm/boost-mpl"
+version = "1.46.1"
+
+[[dependency]]
+package = "github.com/buckaroo-pm/boost-numeric_conversion"
+version = "1.46.1"
+
+[[dependency]]
+package = "github.com/buckaroo-pm/boost-optional"
+version = "1.46.1"
+
+[[dependency]]
+package = "github.com/buckaroo-pm/boost-proto"
+version = "1.46.1"
+
+[[dependency]]
+package = "github.com/buckaroo-pm/boost-range"
+version = "1.46.1"
+
+[[dependency]]
+package = "github.com/buckaroo-pm/boost-smart_ptr"
+version = "1.46.1"
