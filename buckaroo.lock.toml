@@ -114,7 +114,7 @@ revision = "0b9332d4df895e1077bab8ee34473a8882bfedf5"
 
 [lock."github.com/buckaroo-pm/boost-conversion"]
 versions = [ "branch=master" ]
-revision = "e90e9325d05332eea7d87e262eb8deb0174f45ed"
+revision = "7dde52c7e74c267422aa54988980b863e849e598"
 
 [lock."github.com/buckaroo-pm/boost-core"]
 versions = [ "branch=master" ]
@@ -198,11 +198,11 @@ revision = "4d01d0f9c0ae3ae3cd20e3cbfddbc9909ce8e064"
 
 [lock."github.com/buckaroo-pm/boost-proto"]
 versions = [ "branch=master" ]
-revision = "153d707e0fbf7ea9898d5566e56264f0b181e320"
+revision = "ff5442377d14be8ce2c1ff1177c9ea67bf673af3"
 
 [lock."github.com/buckaroo-pm/boost-ptr_container"]
 versions = [ "branch=master" ]
-revision = "66db4689881b75f9acf3a83c42d6e144480fe60d"
+revision = "cb6a533e3402af736b4016570292418e6ef9ba43"
 
 [lock."github.com/buckaroo-pm/boost-range"]
 versions = [ "branch=master" ]
