@@ -1,4 +1,4 @@
-manifest = "05aa213e7b8b60af0060943fc0eddc17be4b2382e0ce27daab8938a394a38008"
+manifest = "dd1f716b994350d2c9a1c13626006dfad2dd8f72232f021d9e63da4d47bfad52"
 
 [[dependency]]
 package = "github.com/buckaroo-pm/boost-assert"
@@ -83,10 +83,6 @@ revision = "fec43c0920f45a65cf5296dcd28643a513ef1734"
 [lock."github.com/buckaroo-pm/boost-atomic"]
 versions = [ "branch=master" ]
 revision = "3c7e658914247c4b27511d2a46f59be614e2f7bf"
-
-[lock."github.com/buckaroo-pm/boost-bind"]
-versions = [ "branch=master" ]
-revision = "cfad39eb7381d02a0914f1c939140aa4f8195a1e"
 
 [lock."github.com/buckaroo-pm/boost-bind"]
 versions = [ "branch=master" ]
