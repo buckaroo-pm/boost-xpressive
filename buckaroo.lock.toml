@@ -1,4 +1,4 @@
-manifest = "05aa213e7b8b60af0060943fc0eddc17be4b2382e0ce27daab8938a394a38008"
+manifest = "dd1f716b994350d2c9a1c13626006dfad2dd8f72232f021d9e63da4d47bfad52"
 
 [[dependency]]
 package = "github.com/buckaroo-pm/boost-assert"
@@ -114,7 +114,7 @@ revision = "0b9332d4df895e1077bab8ee34473a8882bfedf5"
 
 [lock."github.com/buckaroo-pm/boost-conversion"]
 versions = [ "branch=master" ]
-revision = "e90e9325d05332eea7d87e262eb8deb0174f45ed"
+revision = "7dde52c7e74c267422aa54988980b863e849e598"
 
 [lock."github.com/buckaroo-pm/boost-core"]
 versions = [ "branch=master" ]
@@ -198,11 +198,11 @@ revision = "4d01d0f9c0ae3ae3cd20e3cbfddbc9909ce8e064"
 
 [lock."github.com/buckaroo-pm/boost-proto"]
 versions = [ "branch=master" ]
-revision = "153d707e0fbf7ea9898d5566e56264f0b181e320"
+revision = "ff5442377d14be8ce2c1ff1177c9ea67bf673af3"
 
 [lock."github.com/buckaroo-pm/boost-ptr_container"]
 versions = [ "branch=master" ]
-revision = "66db4689881b75f9acf3a83c42d6e144480fe60d"
+revision = "cb6a533e3402af736b4016570292418e6ef9ba43"
 
 [lock."github.com/buckaroo-pm/boost-range"]
 versions = [ "branch=master" ]
@@ -234,7 +234,7 @@ revision = "fdc2df7f811436674a1c55c766b8830a8cd02e96"
 
 [lock."github.com/buckaroo-pm/boost-system"]
 versions = [ "branch=master" ]
-revision = "623a2c80a8448da0df4e7f20102e9e929e355551"
+revision = "7730c1c9ba6e809ab7e21c9115d362d5a717b112"
 
 [lock."github.com/buckaroo-pm/boost-test"]
 versions = [ "branch=master" ]
@@ -282,4 +282,4 @@ revision = "44002f228a0b91c556cd41f8ceb5b4bff7745166"
 
 [lock."github.com/buckaroo-pm/icu4c"]
 versions = [ "branch=master" ]
-revision = "2bfbe715e2c1cd41e301b6a67fd50ae54273a504"
+revision = "7dfc9d72ec1fd0a47d0ef4f8e7756c797ad26f53"
